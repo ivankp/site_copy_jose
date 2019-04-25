@@ -75,6 +75,9 @@ function load_labels(name) {
       sel.attr({name:col[0],size:10,multiple:''})
       .append(col[1].map((x,i) => {
         const opt = $('<option>').text(x);
+        if ( (i==0 && !/^var\d+$/.test(col[0])) ||
+             (col[0]=='complex')
+        ) opt.attr('selected','');
         return opt;
       }))
       .change(function(){
