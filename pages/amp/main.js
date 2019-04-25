@@ -15,11 +15,6 @@ const plots = [{
   draw: single_plot
 }];
 
-function print(x) {
-  console.log(x);
-  return x;
-}
-
 function getUrlVars(include,exclude) {
   const vars = {};
   window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
