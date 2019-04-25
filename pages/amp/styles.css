@@ -1,0 +1,39 @@
+#plots > *, #nodata {
+  margin: 15px 0;
+}
+#nodata {
+  color: red;
+}
+
+#db > [name="db"] { margin: 0 0 5px 0; }
+#db > .hint { color: red; }
+#share img { margin-right: 5px; }
+
+#db :not(:first-child) {
+  margin-left: 6px;
+}
+
+.plot_legend:hover {
+  cursor: pointer;
+}
+
+#color_picker {
+  position: absolute;
+  z-index: 1000;
+  padding-left: 5px;
+}
+#color_picker > input {
+  width: 60px;
+}
+
+#labels {
+  display: flex;
+}
+.label_name {
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
+.tt {
+  font-family: monospace;
+}

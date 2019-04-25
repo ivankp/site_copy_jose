@@ -1,0 +1,103 @@
+html { background: #fff; }
+body, div { margin: 0; padding: 0; border: 0; }
+
+a {
+  text-decoration: none;
+  color: #0000EE;
+  cursor: pointer;
+}
+a:link { color: #0000EE; }
+a:visited { color: #551A8B; }
+a:active { color: #EE0000; }
+a:hover { text-decoration: underline; }
+
+#main {
+  margin: 0 10px;
+  padding: 0 0 20px 0;
+}
+
+kbd {
+  border-radius: 3px;
+  padding: 1px 2px 0;
+  border: 1px solid black;
+}
+
+.math { font-style: italic; }
+.mathrm { font-style: normal; }
+
+/* Navigation panel =============================================== */
+#nav {
+  z-index: 1;
+  height: 45px;
+  width: 100%;
+}
+#nav * { z-index: 1; }
+#nav a, #nav p, #date {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 32px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0 15px;
+}
+#date {
+  position: absolute;
+  float: right;
+  right: 5px;
+  top: 0px;
+  display: initial;
+}
+#nav ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  margin: 0; padding: 0;
+}
+#nav p {
+  margin: 0;
+  cursor: pointer;
+}
+#nav img {
+  vertical-align: -2px;
+  margin: 0;
+  padding: 0px 3px 0px 0px;
+}
+#nav ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#nav ul li.current-menu-item {
+  background: #ddd;
+}
+#nav ul li:hover {
+  background: #888;
+}
+#nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 0;
+}
+#nav ul ul li {
+  float: none;
+  width: 200px;
+}
+#nav ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+}
+#nav ul ul ul {
+  top: 0;
+  left: 100%;
+}
+#nav ul li:hover > ul {
+  display: block;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
