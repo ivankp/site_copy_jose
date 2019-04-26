@@ -3,6 +3,7 @@
 <script src="js/d3-selection-multi.v1.min.js"></script>
 <script src="js/d3-plot.js"></script>
 <script src="js/jscolor.min.js"></script>
+<script src="js/dbview.js"></script>
 
 <script>
 const page = "<?php echo $this_page;?>";
@@ -17,10 +18,7 @@ foreach (scandir($files_dir) as $f) {
 ?>];
 </script>
 
-<form>
-<div id="db"></div>
-<div id="labels"></div>
-</form>
+<div id="dbview"></div>
 
 <div id="color_picker" style="display:none;">
 <input class="jscolor {hash:true}">
