@@ -72,6 +72,13 @@ if ($dir!='pages') {
   $css = $dir.'/styles.css';
   if (file_exists($css)) link_css($css);
 }
+
+if ($page_file) { ?>
+<script>
+const page = "<?php echo $this_page;?>";
+const dir = "<?php echo $dir;?>";
+</script>
+<?php }
 ?>
 
 <body>

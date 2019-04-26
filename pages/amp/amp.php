@@ -6,8 +6,6 @@
 <script src="js/dbview.js"></script>
 
 <script>
-const page = "<?php echo $this_page;?>";
-const dir = "<?php echo $dir;?>";
 const dbs = [<?php
 $files_dir = "$dir/data";
 foreach (scandir($files_dir) as $f) {
